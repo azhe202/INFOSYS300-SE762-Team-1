@@ -74,16 +74,12 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="SortData" sap:VirtualizedContainerService.HintSize="476,1766" sap2010:WorkflowViewState.IdRef="Sequence_1">
-    <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="test1" />
-    </Sequence.Variables>
+  <Sequence DisplayName="SortData" sap:VirtualizedContainerService.HintSize="476,1642" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OutputDataTable DataTable="[custDataTable]" DisplayName="Output data table" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[test1]" />
     <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="FirstName" DataTable="[custDataTable]" DisplayName="Add FirstName data column" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
     <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="LastName" DataTable="[custDataTable]" DisplayName="Add LastName data column" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
     <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[custDataTable]" DisplayName="For each row" sap:VirtualizedContainerService.HintSize="434,974" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
@@ -178,6 +174,5 @@
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
     </ui:ExcelApplicationScope>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" Buttons="Ok" DisplayName="Message box" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[test1]" TopMost="True" />
   </Sequence>
 </Activity>
