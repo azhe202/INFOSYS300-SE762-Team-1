@@ -6,5 +6,6 @@
   "UiPath.CV.Activities.CvScope.Server": "https://cv.uipath.com",
   "UiPath.CV.Activities.CvScope.ApiKey": "",
   "UiPath.CV.Activities.CvScope.UseLocalServer": "False",
-  "UiPath.CV.Activities.RobotLogging.TableScrollLog": "False"
+  "UiPath.CV.Activities.RobotLogging.TableScrollLog": "False",
+  "UiPath.CV.Activities.CvScope.CVMethod": "ElementDetection|OCR"
 }
