@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>728,1709</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>724,1578</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetData_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -72,10 +72,9 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetData" sap:VirtualizedContainerService.HintSize="714,1706" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetData" sap:VirtualizedContainerService.HintSize="704,1518" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="responseDataTable" />
     </Sequence.Variables>
@@ -84,20 +83,20 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BuildDataTable DataTable="[responseDataTable]" DisplayName="Build Temporary Response Data Table" sap:VirtualizedContainerService.HintSize="672,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Full_x0020_name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Address&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Contact_x0020_number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Email_x0020_address&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="Loop Through 10 Different Web Forms" sap:VirtualizedContainerService.HintSize="672,1415" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[Enumerable.Range(1,10)]">
+    <ui:BuildDataTable DataTable="[responseDataTable]" DisplayName="Build Temporary Response Data Table" sap:VirtualizedContainerService.HintSize="662,22" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Full_x0020_name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Address&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Contact_x0020_number&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Email_x0020_address&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="Loop Through 10 Different Web Forms" sap:VirtualizedContainerService.HintSize="662,1264" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[Enumerable.Range(1,10)]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="response" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Extract Data" sap:VirtualizedContainerService.HintSize="636,1291" sap2010:WorkflowViewState.IdRef="Sequence_19">
+          <Sequence DisplayName="Extract Data" sap:VirtualizedContainerService.HintSize="636,1128" sap2010:WorkflowViewState.IdRef="Sequence_19">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="594,1199" sap2010:WorkflowViewState.IdRef="Sequence_18">
+            <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="594,1036" sap2010:WorkflowViewState.IdRef="Sequence_18">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="extractedDataTable" />
               </Sequence.Variables>
@@ -106,13 +105,13 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Customer Onboarding Web Form Responses" sap:VirtualizedContainerService.HintSize="552,1107" sap2010:WorkflowViewState.IdRef="BrowserScope_7" InformativeScreenshot="b28df05850cfe75936be4b7dd2921b23" Selector="&lt;html app='msedge.exe' title='Customer Information Web Form - Google Forms' /&gt;">
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Customer Onboarding Web Form Responses" sap:VirtualizedContainerService.HintSize="552,944" sap2010:WorkflowViewState.IdRef="BrowserScope_7" InformativeScreenshot="b28df05850cfe75936be4b7dd2921b23" Selector="&lt;html app='msedge.exe' title='Customer Information Web Form - Google Forms' /&gt;">
                 <ui:BrowserScope.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Extract Data" sap:VirtualizedContainerService.HintSize="518,961" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <Sequence DisplayName="Extract Data" sap:VirtualizedContainerService.HintSize="518,798" sap2010:WorkflowViewState.IdRef="Sequence_17">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -128,7 +127,7 @@
                           </ui:Target>
                         </ui:ExtractData.Target>
                       </ui:ExtractData>
-                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{extractedDataTable.Rows(0).Item(0).ToString, extractedDataTable.Rows(1).Item(0).ToString, extractedDataTable.Rows(2).Item(0).ToString, extractedDataTable.Rows(3).Item(0).ToString}]" DataTable="[responseDataTable]" DisplayName="Add Data Row To Temporary Response Data Table" sap:VirtualizedContainerService.HintSize="476,185" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{extractedDataTable.Rows(0).Item(0).ToString, extractedDataTable.Rows(1).Item(0).ToString, extractedDataTable.Rows(2).Item(0).ToString, extractedDataTable.Rows(3).Item(0).ToString}]" DataTable="[responseDataTable]" DisplayName="Add Data Row To Temporary Response Data Table" sap:VirtualizedContainerService.HintSize="476,22" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
                       <Sequence DisplayName="Screen Scraping" sap:VirtualizedContainerService.HintSize="476,436" sap2010:WorkflowViewState.IdRef="Sequence_16">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -173,7 +172,7 @@
         </ActivityAction>
       </ui:ForEach.Body>
     </ui:ForEach>
-    <Assign sap:VirtualizedContainerService.HintSize="672,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="662,60" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="sd:DataTable">[custDataTable]</OutArgument>
       </Assign.To>
