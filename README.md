@@ -37,10 +37,10 @@ What should I do if I encounter unexpected errors while running the bot?
 - If you encounter unexpected errors, ensure that you are using the recommended version of UiPath Studio (2022.4.1) and that you have correctly installed the Microsoft Edge extension as per the provided instructions. If issues persist, you may need to troubleshoot the bot's configuration or consult the UiPath community for assistance.
 
 ## Deployment Recommendations
-Currently, the bot is developed to be deployed on a per-PC basis. This can be achieved by following the run instructions on each PC.   
-For a full business solution, we recommend a cloud-based deployment. Our project could be deployed on the cloud-based Orchestrator, allowing centralized management of robots, including scheduling, logging, reporting, and other functions. Deploying to the cloud will mean our robots can operate whenever and wherever. As long as there's an internet connection, they will be able to access and perform tasks, ensuring high availability and flexibility. Additionally, we will be able to monitor the robot's status, execution history, and performance metrics through a dashboard.
+Currently, the bot is developed to be deployed on a per-PC basis. This can be achieved by following the run instructions on each PC.  
 
-To ensure our RPA processes run on schedule, we will set up a time trigger. To give customers enough time to handle feedback, we recommend 9:30 AM daily as the trigger time. This means that every morning at 9:30 AM, our robot will automatically start and carry out its tasks without human intervention, making it a truly unattended robot.
+For a full business solution, we recommend a cloud-based deployment. Our project could be deployed on the cloud-based Orchestrator, allowing centralized management of robots, including scheduling, logging, reporting, and other functions. Deploying to the cloud will mean our robots can operate whenever and wherever. As long as there's an internet connection, they will be able to access and perform tasks, ensuring high availability and flexibility. Additionally, we will be able to monitor the robot's status, execution history, and performance metrics through a dashboard.  
+To ensure our RPA processes run on schedule, we recommend setting up a time trigger. To give customers enough time to handle feedback, we recommend 9:30 AM daily as the trigger time. This means that every morning at 9:30 AM, our robot will automatically start and carry out its tasks without human intervention, making it a truly unattended robot.
 
 ## Meet the team
 INFOSYS300/SOFTENG762
