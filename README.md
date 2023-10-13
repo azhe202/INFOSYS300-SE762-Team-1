@@ -1,6 +1,6 @@
 # Customer Onboarding Automation
 This is an RPA bot that scrapes customer data from online forms and collates the data into an excel sheet. This reduces the manual effort of onboarding, and ensures data accuracy and validity. 
-Customer entries are stored in this [google form](https://docs.google.com/forms/d/e/1FAIpQLScm45kAn7LA41sbDRfhKIkykisubdUI7VBgbB7sxECBabjFLw/viewform?usp=sharing)
+Customer entries are stored in this [google form](https://docs.google.com/forms/d/1cvZUBP0Vo8Vy-w5j898pOsyVXV3VYtjqrnkpFijs_cc/edit#responses)
 
 ## How to run
 1. Clone this repo or download the zip file.
