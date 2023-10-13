@@ -1,5 +1,6 @@
 # Customer Onboarding Automation
 This is an RPA bot that scrapes customer data from online forms and collates the data into an excel sheet. This reduces the manual effort of onboarding, and ensures data accuracy and validity. 
+Customer entries are stored in this [google form](https://docs.google.com/forms/d/e/1FAIpQLScm45kAn7LA41sbDRfhKIkykisubdUI7VBgbB7sxECBabjFLw/viewform?usp=sharing)
 
 ## How to run
 1. Clone this repo or download the zip file.
@@ -22,6 +23,9 @@ What are the benefits of using this bot?
 What software and tools are required to run this bot?
 - You need UiPath Studio, specifically UiPath Academic Alliance Studio 2022.4.1 (recommended for tested compatibility).
 - You also need Microsoft Edge with the UiPath extension, which can be installed following the instructions provided in the [documentation](https://docs.uipath.com/studio/standalone/2023.4/user-guide/extension-for-edge-chromium).
+
+Can I add new customers to the form?
+- Yes! Just follow this [link](https://docs.google.com/forms/d/e/1FAIpQLScm45kAn7LA41sbDRfhKIkykisubdUI7VBgbB7sxECBabjFLw/viewform?usp=sharing)
 
 Can I modify or extend the functionality of this bot to suit my specific needs?
 - Yes, you can customize and extend the functionality of the bot in UiPath Studio to meet your specific requirements.
