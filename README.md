@@ -6,8 +6,9 @@ Customer entries are stored in this [google form](https://docs.google.com/forms/
 1. Clone this repo or download the zip file.
 2. Open the project in UiPath Studio. We recommend using UiPath Academic Alliance Studio 2022.4.1, as this is the version it has been tested on. Unexpected errors may occur when using other versions.
 3. Install Microsoft Edge and its UiPath extension. Instructions can be found [here](https://docs.uipath.com/studio/standalone/2023.4/user-guide/extension-for-edge-chromium)
-4. Open the file Main.xaml
-5. Click Run/Debug
+4. Open the [responses web form](https://docs.google.com/forms/d/1cvZUBP0Vo8Vy-w5j898pOsyVXV3VYtjqrnkpFijs_cc/edit#response=ACYDBNhJvN--6fXUk6jgSOAGx9NWFwVpYBhZe0nrTvaduGhPd-uEJeZl9wQeaHPr8gyqmpo) on a Microsoft Edge browser. IMPORTANT: It must be Microsoft Edge, and the responses must be open to form number 1
+5. Open the file Main.xaml
+6. Click Run/Debug
 Microsoft Edge windows will open during the process. Do not interrupt the process. When the bot is finished, a dialogue will appear with the message 'Process complete'.
 
 Open cust_data.xlsx to view the sorted and validated data. 
@@ -51,3 +52,5 @@ INFOSYS300/SOFTENG762
 - Yunyang (Patrick) Peng
 - Leon Wang
 - Yuewen Zheng
+
+https://github.com/azhe202/INFOSYS300-SE762-Team-1 
