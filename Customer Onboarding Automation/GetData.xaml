@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>728,2754</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>728,2739</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetData_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -75,7 +75,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetData" sap:VirtualizedContainerService.HintSize="714,2689" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetData" sap:VirtualizedContainerService.HintSize="714,2674" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="responseDataTable" />
       <Variable x:TypeArguments="x:Int32" Name="numOfResponses" />
@@ -133,19 +133,19 @@
       </Assign>
     </Sequence>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="672,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;START getting data from forms&quot;]" />
-    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through each of the responses of the google form and extract the data" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="672,1560" sap2010:WorkflowViewState.IdRef="ForEach`1_8" Values="[Enumerable.Range(1,numOfResponses)]">
+    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through each of the responses of the google form and extract the data" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="672,1545" sap2010:WorkflowViewState.IdRef="ForEach`1_8" Values="[Enumerable.Range(1,numOfResponses)]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="response" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Extract Data" sap:VirtualizedContainerService.HintSize="636,1405" sap2010:WorkflowViewState.IdRef="Sequence_19">
+          <Sequence DisplayName="Extract Data" sap:VirtualizedContainerService.HintSize="636,1390" sap2010:WorkflowViewState.IdRef="Sequence_19">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="594,1313" sap2010:WorkflowViewState.IdRef="Sequence_18">
+            <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="594,1298" sap2010:WorkflowViewState.IdRef="Sequence_18">
               <Sequence.Variables>
                 <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="extractedDataTable" />
               </Sequence.Variables>
@@ -154,13 +154,13 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Customer Onboarding Web Form Responses" sap:VirtualizedContainerService.HintSize="552,1221" sap2010:WorkflowViewState.IdRef="BrowserScope_7" InformativeScreenshot="b28df05850cfe75936be4b7dd2921b23" Selector="&lt;html app='msedge.exe' title='Customer Information Web Form - Google Forms' /&gt;">
+              <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Open Customer Onboarding Web Form Responses" sap:VirtualizedContainerService.HintSize="552,1206" sap2010:WorkflowViewState.IdRef="BrowserScope_7" InformativeScreenshot="b28df05850cfe75936be4b7dd2921b23" Selector="&lt;html app='msedge.exe' title='Customer Information Web Form - Google Forms' /&gt;">
                 <ui:BrowserScope.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Extract Data" sap:VirtualizedContainerService.HintSize="518,1075" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <Sequence DisplayName="Extract Data" sap:VirtualizedContainerService.HintSize="518,1060" sap2010:WorkflowViewState.IdRef="Sequence_17">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -182,7 +182,7 @@
                           </ui:Target>
                         </ui:ExtractData.Target>
                       </ui:ExtractData>
-                      <ui:AddDataRow DataRow="{x:Null}" sap2010:Annotation.AnnotationText="Transform the extracted column into the respective rows of the data table&#xD;&#xA;" ArrayRow="[{extractedDataTable.Rows(0).Item(0).ToString, extractedDataTable.Rows(1).Item(0).ToString, extractedDataTable.Rows(2).Item(0).ToString, extractedDataTable.Rows(3).Item(0).ToString}]" DataTable="[responseDataTable]" DisplayName="Add Data Row To Temporary Response Data Table" sap:VirtualizedContainerService.HintSize="476,242" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
+                      <ui:AddDataRow DataRow="{x:Null}" sap2010:Annotation.AnnotationText="Transform the extracted column into the respective rows of the data table" ArrayRow="[{extractedDataTable.Rows(0).Item(0).ToString, extractedDataTable.Rows(1).Item(0).ToString, extractedDataTable.Rows(2).Item(0).ToString, extractedDataTable.Rows(3).Item(0).ToString}]" DataTable="[responseDataTable]" DisplayName="Add Data Row To Temporary Response Data Table" sap:VirtualizedContainerService.HintSize="476,227" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
