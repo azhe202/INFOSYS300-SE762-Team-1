@@ -9,8 +9,14 @@ Customer entries are stored in this [google form](https://docs.google.com/forms/
 4. Open the [responses web form](https://docs.google.com/forms/d/1cvZUBP0Vo8Vy-w5j898pOsyVXV3VYtjqrnkpFijs_cc/edit#response=ACYDBNhJvN--6fXUk6jgSOAGx9NWFwVpYBhZe0nrTvaduGhPd-uEJeZl9wQeaHPr8gyqmpo) on a Microsoft Edge browser. IMPORTANT: It must be Microsoft Edge, and the responses must be open to form number 1
 5. Open the file Main.xaml
 6. Click Run/Debug
+   
 Microsoft Edge windows will open during the process. Do not interrupt the process. When the bot is finished, a dialogue will appear with the message 'Process complete'.
 
+Once the process is complete, emails will be sent to notify customers if their data is valid or invalid. To check these emails, please log into the accounts below.
+- If the customer has a valid email address, an email will be sent to inform them their data is valid/invalid or missing. The email account is the same for all of the responses to the Google form for the purposes of testing. **Username**: customer.rpa.group1.2023@gmail.com **Password**: testuser123
+- If the customer has an invalid email address, an email will be sent to a staff email. **Username**: staff.rpa.group1.2023@gmail.com **Password**: testuser123
+
+  
 Open cust_data.xlsx to view the sorted and validated data. 
 
 ## FAQ
@@ -41,6 +47,7 @@ What should I do if I encounter unexpected errors while running the bot?
 Currently, the bot is developed to be deployed on a per-PC basis. This can be achieved by following the run instructions on each PC.  
 
 For a full business solution, we recommend a cloud-based deployment. Our project could be deployed on the cloud-based Orchestrator, allowing centralized management of robots, including scheduling, logging, reporting, and other functions. Deploying to the cloud will mean our robots can operate whenever and wherever. As long as there's an internet connection, they will be able to access and perform tasks, ensuring high availability and flexibility. Additionally, we will be able to monitor the robot's status, execution history, and performance metrics through a dashboard.  
+
 To ensure our RPA processes run on schedule, we recommend setting up a time trigger. To give customers enough time to handle feedback, we recommend 9:30 AM daily as the trigger time. This means that every morning at 9:30 AM, our robot will automatically start and carry out its tasks without human intervention, making it a truly unattended robot.
 
 ## Meet the team
@@ -53,4 +60,4 @@ INFOSYS300/SOFTENG762
 - Leon Wang
 - Yuewen Zheng
 
-https://github.com/azhe202/INFOSYS300-SE762-Team-1 
+Link to GitHub repository: https://github.com/azhe202/INFOSYS300-SE762-Team-1 
