@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>346,526</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>728,2692</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SortData_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
@@ -65,8 +65,9 @@
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -74,21 +75,22 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="SortData" sap:VirtualizedContainerService.HintSize="476,1642" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SortData" sap:VirtualizedContainerService.HintSize="476,2627" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="FirstName" DataTable="[custDataTable]" DisplayName="Add FirstName data column" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
-    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="LastName" DataTable="[custDataTable]" DisplayName="Add LastName data column" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[custDataTable]" DisplayName="For each row" sap:VirtualizedContainerService.HintSize="434,974" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;START sorting data&quot;]" />
+    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="FirstName" DataTable="[custDataTable]" DisplayName="Add FirstName data column" sap:VirtualizedContainerService.HintSize="434,185" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
+    <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="LastName" DataTable="[custDataTable]" DisplayName="Add LastName data column" sap:VirtualizedContainerService.HintSize="434,185" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop through each response in the customer table and split the name by first name and last name so that it can be alphabetically ordered by the last name" DataTable="[custDataTable]" DisplayName="For each row" sap:VirtualizedContainerService.HintSize="434,1217" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,838" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,1045" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="str_FullName" />
               <Variable x:TypeArguments="s:String[]" Name="arr_Names" />
@@ -100,8 +102,8 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Full Name" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[LogLevel.Info]" Message="[row(0).ToString]" />
-            <Assign DisplayName="Temp Store FullName" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <ui:LogMessage DisplayName="Log Full Name" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[LogLevel.Info]" Message="[&quot;Full name &quot; + row(0).ToString]" />
+            <Assign DisplayName="Temp Store FullName" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[str_FullName]</OutArgument>
               </Assign.To>
@@ -109,7 +111,7 @@
                 <InArgument x:TypeArguments="x:String">[row(0).ToString]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign DisplayName="Split FullName" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign DisplayName="Split FullName" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="s:String[]">[arr_Names]</OutArgument>
               </Assign.To>
@@ -117,7 +119,7 @@
                 <InArgument x:TypeArguments="s:String[]">[str_FullName.Split(" "c)]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign DisplayName="Store FirstName" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+            <Assign DisplayName="Store FirstName" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_3">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[str_FirstName]</OutArgument>
               </Assign.To>
@@ -125,7 +127,7 @@
                 <InArgument x:TypeArguments="x:String">[arr_Names(0)]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign DisplayName="Assign FirstName in DT" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+            <Assign DisplayName="Assign FirstName in DT" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_5">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Object">[row.Item("FirstName")]</OutArgument>
               </Assign.To>
@@ -133,8 +135,8 @@
                 <InArgument x:TypeArguments="x:Object">[str_FirstName]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:LogMessage DisplayName="Log FirstName Assigned in DataTable" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[LogLevel.Info]" Message="[row.Item(&quot;FirstName&quot;)]" />
-            <Assign DisplayName="Store LastName" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+            <ui:LogMessage DisplayName="Log FirstName Assigned in DataTable" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="[LogLevel.Info]" Message="[&quot;First Name &quot; + row.Item(&quot;FirstName&quot;).ToString]" />
+            <Assign DisplayName="Store LastName" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_4">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[str_LastName]</OutArgument>
               </Assign.To>
@@ -142,7 +144,7 @@
                 <InArgument x:TypeArguments="x:String">[arr_Names(1)]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign DisplayName="Assign LastName" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+            <Assign DisplayName="Assign LastName" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_6">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Object">[row.Item("LastName")]</OutArgument>
               </Assign.To>
@@ -150,13 +152,17 @@
                 <InArgument x:TypeArguments="x:Object">[str_LastName]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:LogMessage DisplayName="Log LastName Assigned in DataTable" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[LogLevel.Info]" Message="[row.Item(&quot;LastName&quot;)]" />
+            <ui:LogMessage DisplayName="Log LastName Assigned in DataTable" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="[LogLevel.Info]" Message="[&quot;Last Name &quot; + row.Item(&quot;LastName&quot;).ToString]" />
           </Sequence>
         </ActivityAction>
       </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" ColumnName="LastName" DataTable="[custDataTable]" DisplayName="Sort data table" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="SortDataTable_2" Order="Ascending" OutputDataTable="[custDataTable]" SortOrder="Ascending" />
-    <ui:LogMessage DisplayName="Check Sorted" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[custDataTable.Rows(0).Item(&quot;LastName&quot;)]" />
+    <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" ColumnName="LastName" DataTable="[custDataTable]" DisplayName="Sort data table" sap:VirtualizedContainerService.HintSize="434,238" sap2010:WorkflowViewState.IdRef="SortDataTable_2" Order="Ascending" OutputDataTable="[custDataTable]" SortOrder="Ascending" />
     <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="434,288" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="cust_data.xlsx">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
@@ -174,5 +180,6 @@
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
     </ui:ExcelApplicationScope>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;FINISH sorting data&quot;]" />
   </Sequence>
 </Activity>
